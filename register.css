@@ -195,12 +195,14 @@ body{
     #menu{
       display: initial;
     }
-    .header{
-      display: flex;
-      justify-content: space-between;
-      background:transparent !important;
-      box-shadow: none !important;
-    }
+    ..header{
+        display: flex;
+        justify-content: space-between;
+        background:transparent !important;
+        box-shadow: none !important;
+        padding:0;
+        width:100%
+      }
     #menu{
       width: 40px;
       height: 40px;
@@ -302,5 +304,9 @@ body{
         display: flex;
         flex-direction: column;
         gap: 15px;
+    }
+    .social-media i{
+        padding:0;
+        width:100%;
     }
 }
