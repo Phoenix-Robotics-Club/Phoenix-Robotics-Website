@@ -69,6 +69,12 @@
                 <div class="col-md-8 col-xs-12">
                   <input type="text" class="form-control" id="member_dept" name='entry.1230783439' placeholder="Department" required>
                 </div>
+                <div>
+                
+                  <div class="g-recaptcha" data-sitekey="6LeHOBAaAAAAAKLQ9YdfvWDox8fYJQxxiU_9zcen"></div>
+                  
+                
+                </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
               
               </form>
@@ -100,7 +106,11 @@
                   <label for="client_message">Message</label>
                   <textarea class="form-control" id="client_message" placeholder="Write your query here....."rows="4" required></textarea>
                 </div>
-                
+                <div class="recaptcha">
+                <form action="?" method="POST">
+                  <div class="g-recaptcha" data-sitekey="6LeHOBAaAAAAAKLQ9YdfvWDox8fYJQxxiU_9zcen"></div>
+                  <br/>
+                </form>
                 <button type="submit" class="btn btn-primary" onclick="mail()">Submit</button>
               <p id="query"><i class="fas fa-check-circle"></i>&nbsp;We have received your query. We will contact you through mail</p>
             </div>
