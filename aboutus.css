@@ -106,7 +106,14 @@ body{
 }
 .recaptcha{
     display: flex;
+    flex-direction:column;
     justify-content:center;
+    gap:10px;
+}
+.recaptcha form{
+    display:flex;
+    justify-content:center;
+    margin-bottom:10px;
 }
 #about_heading{
     text-align:center;

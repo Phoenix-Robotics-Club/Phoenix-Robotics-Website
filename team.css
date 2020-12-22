@@ -109,6 +109,12 @@ body{
 }
 .recaptcha{
     display: flex;
+    flex-direction:column;
+    justify-content:center;
+    gap:8px;
+}
+.recaptcha form{
+    display:flex;
     justify-content:center;
 }
 .robot_design_mobile,.robot_design_mobile #workshop_img{
