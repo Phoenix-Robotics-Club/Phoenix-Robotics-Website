@@ -195,7 +195,7 @@ body{
     #menu{
       display: initial;
     }
-    ..header{
+    .header{
         display: flex;
         justify-content: space-between;
         background:transparent !important;
