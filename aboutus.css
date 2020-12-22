@@ -181,6 +181,7 @@ body{
     }
     .hamburger_menu a:hover{
         text-decoration:none;
+        color:#4479cf;
     }
     .hamburger_menu a:focus{
       text-decoration:none;
