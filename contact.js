@@ -8,8 +8,8 @@ function mail(){
     if (grecaptcha.getResponse() == ""){
         alert("Please fill the captcha");
     } else {
+         emailjs.send("gmail","template_oqxm3bp",parms)
          .then(function(res){
-             emailjs.send("gmail","template_oqxm3bp",parms)
             console.log("Email sent",res.status);
             document.getElementById('query').style.visibility = 'visible';
             alert('Your query is successfully submitted.')
