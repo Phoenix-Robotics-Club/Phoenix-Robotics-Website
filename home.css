@@ -405,6 +405,7 @@ body{
     .mission_mobile{
         display:flex;
         flex-direction:column;
+        padding-bottom: 30px;
     }
     #mission_heading_mobile{
         font-size: 30px;
