@@ -132,6 +132,9 @@ body{
 #error{
     width:100%;
 }
+.error_img h1{
+    display:none;
+}
 @media screen and (max-width:900px){
     body{
         margin:0;
@@ -244,5 +247,8 @@ body{
         align-items: center;
         gap: 20px;
         font-family:'Courier New', Courier, monospace;
+    }
+    .error_img h1{
+        display:initial;
     }
 }
