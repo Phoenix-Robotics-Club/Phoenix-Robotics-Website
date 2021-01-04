@@ -348,6 +348,12 @@ body{
     .event{
         display: flex;
         flex-direction: column;
+        padding-top:50px;
+        gap: 40px;
+    }
+    #details-heading{
+        font-family: 'Roboto', sans-serif;
+        font-size: 45px;
     }
     .details{
         display: flex;
@@ -378,5 +384,12 @@ body{
         display:grid;
         grid-template-columns: 1fr 1fr;
         margin:0;
+    }
+    .benefits{
+        display: flex;
+        flex-direction: column;
+    }
+    .benefits h2,h3{
+        text-align: center;
     }
 }
