@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="404.css">
 </head>
 <body>
-  <div class="example">
+  <div class="example" onload="myFunction()">
   <div class="header" id='header' style="position: fixed;width:100%;z-index: 100;">
     <div class="logo"style=' display: flex;justify-content: space-between;align-items:center;'>
         <a href="index" class="logo_text"><img src="images/logo.png" alt="" style="width: 80px;height: 80px;"><div style="text-align: center;padding-right: 10px;"></div></a>
@@ -87,14 +87,8 @@
     </div>
   </div>
   </div>
-  <div class="loader">
-    <div class="preloader">
-      <div class="loading">
-
-      </div>
-    </div>
-  </div>
   
+  <h1 id="demo"></h1>
   <style>
     .loader {
       height: 100vh;
@@ -126,21 +120,14 @@
     var a=document.getElementsByClassName('loading')[0];
     var b=100;
     function load(){
-      if (b>=603){
-        b=0;
-        a.style.width=b+'px';
-        console.log('reset');
-      }
-      else{
-        a.style.width=b+'px';
-        b+=100;
-        console.log('load');
-      }
-
+      a.style.width='100px';
+      
     }
+    function myFunction() {
+  document.getElementById("demo").innerHTML = "Iframe is loaded.";
+}
     function abc(){
-      document.getElementsByClassName('example')[0].style.display='initial';
-      document.getElementsByClassName('loader')[0].style.display='none';
+      setTimeout(function(){document.getElementsByClassName('example')[0].style.display='initial'; }, 3000);
     }
   </script>
 </body>
