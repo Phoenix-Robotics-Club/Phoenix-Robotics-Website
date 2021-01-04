@@ -51,11 +51,9 @@
     <div class="registration-form">
       <h1>Register Now</h1>
       <form class='register-form'>
-        <p id='error-message' style='color: white;'></p>
         <input type="text" required placeholder='First Name' name="entry.1958438767" style='text-transform: uppercase;'>
         <input type="text" required placeholder='Last Name' name="entry.1876330875" style='text-transform: uppercase;'>
         <input type="email" required placeholder='Email Address' name="entry.1890190564" id='email'>
-        <input type="email" required placeholder='Re-enter Email Address' id='vemail'>
         <input type="tel" required placeholder='Mobile Number' name="entry.217702581">
         <input type="text" required placeholder='Department' name="entry.236620877">
         <div class="recaptcha">
@@ -248,9 +246,6 @@ function validate() {
   var vemail = document.getElementById('vemail').innerHTML;
   if (grecaptcha.getResponse() == ""){
     alert("Please fill the captcha");
-  } 
-  else if (email!=vemail) {
-    document.getElementById('error-message').innerHTML='Email Mismatched!'
   }
   else 
   {
