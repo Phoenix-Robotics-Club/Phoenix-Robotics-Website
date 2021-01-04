@@ -345,22 +345,38 @@ body{
         flex-direction: column;
         gap: 15px;
     }
-    .event-item{
+    .event{
         display: flex;
         flex-direction: column;
     }
-    .events-list{
+    .details{
         display: flex;
         flex-direction: column;
-        gap: 100px;
     }
-    #events-title{
-        letter-spacing: 0.5rem;
+    .event-details-1{
+        display: flex;
+        flex-direction: column;
     }
-    .logo_text{
-        display:none;
+    .event-details-1 img{
+        order: 1;
     }
-    .event-item{
-        height: 100%;
+    .event-details-1 p{
+        order:2;
+    }
+    .event-details-2{
+        display: none;
+    }
+    .event-details-2-mobile{
+        display:initial;
+        text-align: center;
+        padding-bottom: 40px;
+    }
+    .event-details-2-mobile img{
+        width: 100%;
+    }
+    .table_of_contents{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        margin:0;
     }
 }
