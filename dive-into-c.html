@@ -57,9 +57,14 @@
         <input type="tel" required placeholder='Mobile Number' name="entry.217702581">
         <input type="text" required placeholder='Department' name="entry.236620877">
         <div class="recaptcha">
+          <form action="?" method="POST">
             <div class="g-recaptcha" data-sitekey="6LeHOBAaAAAAAKLQ9YdfvWDox8fYJQxxiU_9zcen"></div>
+            <br>
+          </form>
         </div>
+        <div>
         <input type="submit" id="register-btn" value="Register" onclick='validate()'>
+        </div>
       </form>
     </div>
   </div>
@@ -249,8 +254,8 @@ function validate() {
   }
   else 
   {
+    alert('Sucessfully Submitted. Check your mail for confirmation');
     document.getElementsByClassName('join_now')[0].action="https://docs.google.com/forms/u/3/d/e/1FAIpQLSdHOvf9tNcC1m6WQW742aUoWaAJ8qjg1kLHHzHc0wzH6PhX6w/formResponse"
-    alert("Thank you");
   }
       }
 </script>

@@ -174,14 +174,18 @@ body{
 }
 #register-btn{
     width:70%;
-    height: 10%;
+    height: 120%;
     background-color: rgba(39, 171, 171,0.5);
     border-radius: 10px;
     transition:all 0.3s ease 0s;
+    color: white;
 }
 #register-btn:hover{
     width:75%;
     transition:all 0.3s ease 0s;
+}
+#register-btn:focus{
+    outline: none;
 }
 .register-form input::-webkit-input-placeholder { /* Edge */
     text-transform: none;
@@ -394,5 +398,11 @@ body{
     }
     .benefits h2,h3{
         text-align: center;
+    }
+    .registration-form{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+        gap: 24px;
     }
 }
