@@ -131,7 +131,8 @@ body{
       background:transparent !important;
       box-shadow: none !important;
       padding:0;
-      width:100%
+      width:100%;
+      position: fixed;
     }
     #menu{
       width: 40px;
@@ -215,5 +216,7 @@ body{
         flex-direction: column;
         gap: 15px;
     }
-    
+    .logo_text{
+        display: none;
+    }
 }
