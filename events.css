@@ -143,6 +143,9 @@ body{
     gap: 25px;
     height: 80vh;
 }
+#python{
+    width:40%;
+}
 .event-item_img img{
     width:100%;
     float: right;
@@ -188,6 +191,9 @@ body{
     align-items: center;
     margin:20px;
     gap: 10px;
+}
+#networking{
+    width:65%;
 }
 @media screen and (max-width:900px){
     body{
