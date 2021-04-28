@@ -296,6 +296,9 @@ option{
 option:focus{
     outline: none;
 }
+.mentor h1{
+    margin:20px;
+}
 .mentor-grid{
     display:grid;
     grid-template-columns:1fr 1fr 1fr 1fr;
@@ -314,6 +317,7 @@ option:focus{
     justify-content:space-around;
     border:2px solid grey;
     border-radius:30px;
+    transition: transform .2s;
 }
 #mentor-name{
     font-size:30px;
@@ -321,6 +325,9 @@ option:focus{
 }
 .mentor-profile:hover{
     background:#27898c;
+    -ms-transform: scale(1.1); 
+    -webkit-transform: scale(1.1); 
+    transform: scale(1.1); 
 }
 @media screen and (max-width:900px){
     body{
