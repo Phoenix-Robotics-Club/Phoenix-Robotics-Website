@@ -207,11 +207,14 @@ body{
 }
 #details-heading{
     text-align: center;
-    border-bottom:1.5px solid grey;
+    border-bottom:6px solid grey;
     font-family: 'Zen Dots', cursive;
     font-size:3rem ;
     text-align: center;
     color: black;
+}
+.details h1{
+    text-align: center;
 }
 .details span{
     color: #1e63b3;
@@ -244,6 +247,8 @@ body{
     flex-direction: column;
     justify-content:center;
     gap: 50px;
+    padding: 20px;
+    text-align: center;
 }
 .table_of_contents{
     display: grid;
@@ -290,6 +295,24 @@ option{
 }
 option:focus{
     outline: none;
+}
+.mentor-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+.mentor-grid img{
+    width:80%;
+}
+.mentor-profile{
+    padding:3px;
+    text-align:center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+    border:2px solid grey;
+    border-radius:30px;
 }
 @media screen and (max-width:900px){
     body{
@@ -446,5 +469,9 @@ option:focus{
         flex-direction: column;
         justify-content:space-between;
         gap: 24px;
+    }
+    .mentor-grid{
+        display:grid;
+        grid-template-columns:1fr 1fr;
     }
 }
