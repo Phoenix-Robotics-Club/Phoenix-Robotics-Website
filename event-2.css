@@ -300,6 +300,7 @@ option:focus{
     display:grid;
     grid-template-columns:1fr 1fr 1fr 1fr;
     gap: 10px;
+    margin:10px;
 }
 .mentor-grid img{
     width:80%;
@@ -313,6 +314,13 @@ option:focus{
     justify-content:space-around;
     border:2px solid grey;
     border-radius:30px;
+}
+#mentor-name{
+    font-size:30px;
+    font-family: 'Roboto', sans-serif;
+}
+.mentor-profile:hover{
+    background:#27898c;
 }
 @media screen and (max-width:900px){
     body{
