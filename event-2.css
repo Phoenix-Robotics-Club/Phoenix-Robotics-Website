@@ -160,7 +160,7 @@ body{
     align-items: center;
     gap: 20px;
 }
-.register-form input{
+.register-form input,#year,#branch{
     width:70%;
     font-size: 22px;
     background:none;
@@ -265,6 +265,12 @@ body{
 }
 .event-details-2-mobile{
     display:none;
+}
+option{
+    color:black;
+}
+option:focus{
+    outline: none;
 }
 @media screen and (max-width:900px){
     body{

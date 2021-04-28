@@ -1,35 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dive into C</title>
-    <link rel="stylesheet" href="event-2.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Step into Arduino | Phoenix Robotics Club</title>
+  <link rel="stylesheet" href="event-2.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
+
 <body>
   <div class="header" id='header' style="width:100%;z-index: 100;">
-    <div class="logo"style=' display: flex;justify-content: space-between;align-items:center;'>
-        <a href="/" class="logo_text"><img src="images/logo.png" alt="" style="width: 80px;height: 80px;"><div style="text-align: center;padding-right: 10px;"></div></a>
-        <a href="/" id='logo-text' class="logo_text">Phoenix Robotics Club<div style="text-align: center;">RVITM</div></a>
+    <div class="logo" style=' display: flex;justify-content: space-between;align-items:center;'>
+      <a href="/" class="logo_text"><img src="images/logo.png" alt="" style="width: 80px;height: 80px;">
+        <div style="text-align: center;padding-right: 10px;"></div>
+      </a>
+      <a href="/" id='logo-text' class="logo_text">Phoenix Robotics Club<div style="text-align: center;">RVITM</div></a>
     </div>
-    
+
     <nav>
 
-        <ul class="nav-links">
-            <li><a class="nav_li" id='home' href="/">Home</a></li>
-            <li><a class="nav_li" id='events' href="events">Events</a></li>
-            <li><a class="nav_li" id='team' href="team">Team</a></li>
-            <li><a class="nav_li" id='aboutus' href="about_us">About Us</a></li>
-            
-        </ul>
-        
+      <ul class="nav-links">
+        <li><a class="nav_li" id='home' href="/">Home</a></li>
+        <li><a class="nav_li" id='events' href="events">Events</a></li>
+        <li><a class="nav_li" id='team' href="team">Team</a></li>
+        <li><a class="nav_li" id='aboutus' href="about_us">About Us</a></li>
+
+      </ul>
+
     </nav>
     <button id='menu' onclick='hamburger()'><img src="images/menu.png" alt=""></button>
-    
+
 
   </div>
   <ul class="hamburger_menu">
@@ -41,9 +47,9 @@
   <div class="event">
     <div class="description">
       <div class="event-heading">
-      <h1>Arduino</h1>
-      <h2>Learn Arduino in a Practical Way</h2>
-      <h4>January 9 - January 11 2021</h4>
+        <h1>Step into Arduino</h1>
+        <h2>Learn Arduino in a Practical Way</h2>
+        <h4>January 9 - January 11 2021</h4>
       </div>
       <div class="event-img">
         <img src="images/ARDUINO_WORKSHOP.png" alt="">
@@ -52,16 +58,26 @@
     <div class="registration-form">
       <h1>Register Now</h1>
       <form class='register-form'>
-        <input type="text" required placeholder='First Name' name="entry.1958438767" style='text-transform: uppercase;'>
-        <input type="text" required placeholder='Last Name' name="entry.1876330875" style='text-transform: uppercase;'>
-        <input type="email" required placeholder='Email Address' name="entry.1890190564" id='email'>
-        <input type="tel" required placeholder='Mobile Number' name="entry.217702581">
-        <input type="text" required placeholder='Department' name="entry.236620877">
+        <input type="text" required placeholder='First Name' name="entry.1484080873" style='text-transform: uppercase;'>
+        <input type="text" required placeholder='Last Name' name="entry.332180087" style='text-transform: uppercase;'>
+        <select name="entry.663871049" id="year">
+          <option value="Year of Study" disabled selected>Year of Study</option>
+          <option value="I">I</option>
+          <option value="II">II</option>
+        </select>
+        <select name="entry.243295286" id="branch">
+          <option value="Branch of Study" disabled selected>Department</option>
+          <option value="CSE">Computer Science and Engineering</option>
+          <option value="ECE">Electronics and Communication Engineering</option>
+          <option value="ISE">Information Science and Engineering</option>
+          <option value="ME">Mechanical Engineering</option>
+        </select>
+        <input type="email" required placeholder='Email Address' name="entry.459700040" id='email'>
         <div class="recaptcha">
-            <div class="g-recaptcha" data-sitekey="6LeHOBAaAAAAAKLQ9YdfvWDox8fYJQxxiU_9zcen"></div>
+          <div class="g-recaptcha" data-sitekey="6LeHOBAaAAAAAKLQ9YdfvWDox8fYJQxxiU_9zcen"></div>
         </div>
         <div>
-        <input type="submit" value="Register" id="register-btn" onclick='validate()'>
+          <input type="submit" value="Register" id="register-btn" onclick='validate()'>
         </div>
       </form>
     </div>
@@ -70,156 +86,158 @@
     <h1 id="details-heading">More Details</h1>
     <h3>Why to Learn C-Programming?</h3>
     <div class="event-details-1">
-    <p>Programming plays a key role in all engineering
-      fields. To get to know about programming it’s better
-      to choose the C language as your first programming
-      language as ”C” is the base of any programming
-      applications. C language plays a vital role in Robotics
-      and acts as the base for many programming
-      languages.</p>
+      <p>Programming plays a key role in all engineering
+        fields. To get to know about programming it’s better
+        to choose the C language as your first programming
+        language as ”C” is the base of any programming
+        applications. C language plays a vital role in Robotics
+        and acts as the base for many programming
+        languages.</p>
       <img src="images/coding-image.jpg" alt="">
-      </div>
-    
+    </div>
+
     <div class="event-details-2">
       <img src="images/dive-into-c.png" alt="">
       <div class="event-details-2-text">
-      <h3>About Phoenix Robotics Club's <span>Dive into C</span></h3>
-    <p>Phoenix Robotics Club took an initiative to
-      conduct the workshop “Dive into C” on C-language in
-      a practical-oriented way of learning. Regardless of
-      what we are learning, we must learn it from the
-      basics. So, the workshop “Dive into C” focuses on
-      laying the solid foundations in C-Programming.
-      According to say “Nail the basics first, Detail the
-      details later,” we feel learning from the basics will
-      help us to solve the most complex problems.</p>
+        <h3>About Phoenix Robotics Club's <span>Dive into C</span></h3>
+        <p>Phoenix Robotics Club took an initiative to
+          conduct the workshop “Dive into C” on C-language in
+          a practical-oriented way of learning. Regardless of
+          what we are learning, we must learn it from the
+          basics. So, the workshop “Dive into C” focuses on
+          laying the solid foundations in C-Programming.
+          According to say “Nail the basics first, Detail the
+          details later,” we feel learning from the basics will
+          help us to solve the most complex problems.</p>
+      </div>
     </div>
-    </div>
-      <div class="event-details-2-mobile">
-        <div class="event-details-2-text">
+    <div class="event-details-2-mobile">
+      <div class="event-details-2-text">
         <h3>About Phoenix Robotics Club's <span>Dive into C</span></h3>
         <img src="images/dive-into-c.png" alt="">
-      <p>Phoenix Robotics Club took an initiative to
-        conduct the workshop “Dive into C” on C-language in
-        a practical-oriented way of learning. Regardless of
-        what we are learning, we must learn it from the
-        basics. So, the workshop “Dive into C” focuses on
-        laying the solid foundations in C-Programming.
-        According to say “Nail the basics first, Detail the
-        details later,” we feel learning from the basics will
-        help us to solve the most complex problems.</p>
+        <p>Phoenix Robotics Club took an initiative to
+          conduct the workshop “Dive into C” on C-language in
+          a practical-oriented way of learning. Regardless of
+          what we are learning, we must learn it from the
+          basics. So, the workshop “Dive into C” focuses on
+          laying the solid foundations in C-Programming.
+          According to say “Nail the basics first, Detail the
+          details later,” we feel learning from the basics will
+          help us to solve the most complex problems.</p>
       </div>
-      </div>
-      <div class="syllabus">
-        <i class="fab fa-leanpub fa-4x"></i>
+    </div>
+    <div class="syllabus">
+      <i class="fab fa-leanpub fa-4x"></i>
       <h2 id="table-of-contents-heading">What you will learn?</h2>
       <div class="table_of_contents">
         <ul>
           <li>Introduction to Programming and Programming
-          languages.
-        </li>
+            languages.
+          </li>
         </ul>
         <ul>
           <li>Coding Vs Programming
-        </li>
+          </li>
         </ul>
         <ul>
           <li>What is C language?
-        </li>
+          </li>
         </ul>
         <ul>
           <li>History of C
-        </li>
+          </li>
         </ul>
         <ul>
           <li> Theory about C
-        </li>
+          </li>
         </ul>
         <ul>
           <li>Understanding the code
-        </li>
+          </li>
         </ul>
         <ul>
           <li>Data types
-        </li>
+          </li>
         </ul>
         <ul>
           <li>Control Flow
-        </li>
+          </li>
         </ul>
         <ul>
           <li>Functions
-        </li>
+          </li>
         </ul>
         <ul>
           <li>Arrays
-        </li>
+          </li>
         </ul>
         <ul>
           <li>Strings
-        </li>
+          </li>
         </ul>
-    </div>
       </div>
-    
+    </div>
+
     <div class="benefits">
-      
-      
+
+
       <img src="images/benefits.svg" alt="">
       <div class="event-details-3">
         <h2 id="benefits-heading">Benefits</h2>
         <ul>
-        <li>Explore C-Programming in an
-          application-oriented way.</li>
+          <li>Explore C-Programming in an
+            application-oriented way.</li>
           <li>Certificates to eligible
             members from Phoenix Robotics Club.</li>
-          </ul>
-          <h3>How to be elgible for Certificate?</h3>
-          <ol>
-            <li>Submit the mini assignments before the
-              deadline</li>
-              <li>Qualify the test</li>
-              <li>Receive the certificate.</li>
-          </ol>
+        </ul>
+        <h3>How to be elgible for Certificate?</h3>
+        <ol>
+          <li>Submit the mini assignments before the
+            deadline</li>
+          <li>Qualify the test</li>
+          <li>Receive the certificate.</li>
+        </ol>
       </div>
     </div>
   </div>
   <div class="footer">
-  
+
     <div class='address'>
-      
+
       <div class="contact_info">
-      <img src="images/contact.svg" alt="">
-      <div class="contact-form" id="contact-form">
-        <h1 class="Contact_heading">Any queries?</h1>
-        <div class='query_form'>
-          <div class="form-row">
-            <div class="form-group col-md-6">
-              <label for="client_name">Name</label>
-              <input type="text" class="form-control" id="client_name" placeholder="Your Name" required>
+        <img src="images/contact.svg" alt="">
+        <div class="contact-form" id="contact-form">
+          <h1 class="Contact_heading">Any queries?</h1>
+          <div class='query_form'>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="client_name">Name</label>
+                <input type="text" class="form-control" id="client_name" placeholder="Your Name" required>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="client_email">Email</label>
+                <input type="email" class="form-control" id="client_email" placeholder="name@email.com" required>
+                <small>We'll never share your email with anyone else</small>
+              </div>
             </div>
-            <div class="form-group col-md-6">
-              <label for="client_email">Email</label>
-              <input type="email" class="form-control" id="client_email" placeholder="name@email.com" required>
-              <small>We'll never share your email with anyone else</small>
+            <div class="form_group">
+              <div class="form-group">
+                <label for="client_message">Message</label>
+                <textarea class="form-control" id="client_message" placeholder="Write your query here....." rows="4"
+                  required></textarea>
+              </div>
+              <div class="recaptcha">
+                <form action="?" method="POST">
+                  <div class="g-recaptcha" data-sitekey="6LeHOBAaAAAAAKLQ9YdfvWDox8fYJQxxiU_9zcen"></div>
+                  <br>
+                </form>
+              </div>
+              <button type="submit" class="btn btn-primary" onclick="mail()">Submit</button>
+              <p id="query"><i class="fas fa-check-circle"></i>&nbsp;We have received your query. We will contact you
+                through mail</p>
             </div>
           </div>
-          <div class="form_group">
-          <div class="form-group">
-            <label for="client_message">Message</label>
-            <textarea class="form-control" id="client_message" placeholder="Write your query here....."rows="4" required></textarea>
-          </div>
-          <div class="recaptcha">
-            <form action="?" method="POST">
-              <div class="g-recaptcha" data-sitekey="6LeHOBAaAAAAAKLQ9YdfvWDox8fYJQxxiU_9zcen"></div>
-              <br>
-            </form>
-          </div>
-          <button type="submit" class="btn btn-primary" onclick="mail()">Submit</button>
-        <p id="query"><i class="fas fa-check-circle"></i>&nbsp;We have received your query. We will contact you through mail</p>
-      </div>
-      </div>
-      </div>
+        </div>
       </div>
       <div class='social-media'>
         <a href="https://www.instagram.com/phoenix_robotics/"><i class="fab fa-instagram fa-2x"></i></a>
@@ -230,32 +248,32 @@
       <p>Copyright © 2020 by Phoenix Robotics Club RVITM, All rights reserved</p>
     </div>
   </div>
-<script src="contact.js"></script>
-<script>
-  var a = document.getElementsByClassName('hamburger_menu')[0];
-      function hamburger() {
-        if (a.style.display === 'flex'){
-          document.body.style.overflow='visible';
-          a.style.display = 'none';
-          document.getElementById('menu').innerHTML='<img src="images/menu.png" alt="">';
-          
-        }
-        else{
-          a.style.display = 'flex';
-          document.getElementById('menu').innerHTML='<h2>X</h2>';
-          document.body.style.overflow='hidden';
-    
-        }
+  <script src="contact.js"></script>
+  <script>
+    var a = document.getElementsByClassName('hamburger_menu')[0];
+    function hamburger() {
+      if (a.style.display === 'flex') {
+        document.body.style.overflow = 'visible';
+        a.style.display = 'none';
+        document.getElementById('menu').innerHTML = '<img src="images/menu.png" alt="">';
+
       }
-function validate() {
-  if (grecaptcha.getResponse() == ""){
-    alert("Please fill the captcha");
-  }
-  else 
-  {
-    document.getElementsByClassName('register-form')[0].action="https://docs.google.com/forms/u/3/d/e/1FAIpQLSdHOvf9tNcC1m6WQW742aUoWaAJ8qjg1kLHHzHc0wzH6PhX6w/formResponse"
-  }
+      else {
+        a.style.display = 'flex';
+        document.getElementById('menu').innerHTML = '<h2>X</h2>';
+        document.body.style.overflow = 'hidden';
+
       }
-</script>
+    }
+    function validate() {
+      if (grecaptcha.getResponse() == "") {
+        alert("Please fill the captcha");
+      }
+      else {
+        document.getElementsByClassName('register-form')[0].action = "https://docs.google.com/forms/d/e/1FAIpQLScPCyFKNsQNeGA1XLq6uGgDsGZKBwePqphwt86CFHVKP7pcdQ/formResponse"
+      }
+    }
+  </script>
 </body>
+
 </html>
