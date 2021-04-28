@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
 .logo_text{
     color: white;
     text-decoration: none;
@@ -206,7 +207,11 @@ body{
 }
 #details-heading{
     text-align: center;
-    margin-bottom: 40px;
+    border-bottom:1.5px solid grey;
+    font-family: 'Zen Dots', cursive;
+    font-size:3rem ;
+    text-align: center;
+    color: black;
 }
 .details span{
     color: #1e63b3;
@@ -219,6 +224,20 @@ body{
 }
 .event-details-1 img,.event-details-2 img{
     width: 100%;
+}
+.event-details-11{
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.event-details-1 img{
+    width: 80%;
+}
+.detail-img{
+    display: flex;
+    align-items: center;
+    justify-content:center;
 }
 .event-details-2-text{
     display: flex;
