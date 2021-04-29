@@ -494,4 +494,8 @@ option:focus{
         display:grid;
         grid-template-columns:1fr 1fr;
     }
+    #mentor-name{
+        font-size:20px;
+        font-weight:bold;
+    }
 }
