@@ -329,6 +329,11 @@ option:focus{
     -webkit-transform: scale(1.1); 
     transform: scale(1.1); 
 }
+.mentor-profile img{
+    border: 4px solid white;
+    background:#95cbcf;
+    border-radius:100%;
+}
 @media screen and (max-width:900px){
     body{
         margin:0;
