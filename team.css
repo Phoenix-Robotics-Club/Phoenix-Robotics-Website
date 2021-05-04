@@ -198,7 +198,10 @@ body{
     cursor: default;
 }
 .mentor_profile img:hover{
-    border-color: blueviolet;
+    background:#27898c;
+    -ms-transform: scale(1.1); 
+    -webkit-transform: scale(1.1); 
+    transform: scale(1.1);
 }
 .mentor_profile-text{
     text-align: center;
@@ -249,6 +252,10 @@ body{
 }
 .profile img:hover{
     border-color: aqua;
+    background:#27898c;
+    -ms-transform: scale(1.1); 
+    -webkit-transform: scale(1.1); 
+    transform: scale(1.1); 
 }
 .profile-text:hover{
     color: aqua;
