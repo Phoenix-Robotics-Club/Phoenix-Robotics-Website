@@ -435,6 +435,7 @@ body{
       justify-content: space-between;
       background:transparent !important;
       box-shadow: none !important;
+      padding:4px !important;
     }
     #menu{
       width: 40px;
