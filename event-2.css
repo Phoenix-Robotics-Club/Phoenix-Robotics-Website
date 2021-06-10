@@ -223,6 +223,10 @@ body{
 .details h1{
     text-align: center;
 }
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
 .details span{
     color: #1e63b3;
 }
