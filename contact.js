@@ -7,7 +7,11 @@ function mail(){
     
     if (grecaptcha.getResponse() == ""){
         alert("Please fill the captcha");
-    } else {
+    } 
+    if (params['from_mail']=="" || params['from_name']=="" || params['message']==""){
+        alert("All fields are required to be filled");
+    }
+    else {
          emailjs.send("gmail","template_oqxm3bp",parms)
          .then(function(res){
             console.log("Email sent",res.status);
