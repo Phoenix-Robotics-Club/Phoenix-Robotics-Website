@@ -137,6 +137,9 @@ body{
 .description{
     color:white;
     text-align:center;
+    margin-top: 20px;
+    background:url(images/background.png) no-repeat;
+    background-size: 100%;
 }
 .description{
     display: flex;
@@ -203,7 +206,11 @@ body{
     text-transform: none;
 }
 .details{
-    margin:10px;
+    margin:20px;
+    padding:20px 5px;
+    background:rgb(219, 219, 219);
+    box-shadow:4px 3px 5px 3px grey;
+    border-radius: 10px;
 }
 #details-heading{
     text-align: center;
@@ -224,9 +231,13 @@ body{
     grid-template-columns:1fr 1fr;
     align-items: center;
     margin-bottom:50px;
+    
 }
-.event-details-1 img,.event-details-2 img{
+.event-details-1 img{
     width: 100%;
+}
+.event-details-2 img{
+    width:60%;
 }
 .event-details-11{
     padding:10px;
@@ -449,6 +460,8 @@ option:focus{
     .details{
         display: flex;
         flex-direction: column;
+        margin:0;
+        border-radius:0;
     }
     .event-details-1{
         display: flex;
@@ -469,7 +482,7 @@ option:focus{
         padding-bottom: 40px;
     }
     .event-details-2-mobile img{
-        width: 100%;
+        width: 90%;
     }
     .table_of_contents{
         display:grid;
