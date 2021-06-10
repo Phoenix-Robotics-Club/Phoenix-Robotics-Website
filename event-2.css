@@ -315,13 +315,15 @@ option:focus{
     margin:20px;
 }
 .mentor-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr 1fr 1fr;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:100%;
     gap: 10px;
     margin:10px;
 }
 .mentor-grid img{
-    width:80%;
+    width:40%;
 }
 .mentor-profile{
     padding:3px;
