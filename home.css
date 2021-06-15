@@ -6,6 +6,20 @@
 body{
     background-color: black;
 }
+#chat-bot{
+    width:75px;
+}
+#voice-btn{
+    background:none;
+    border: none;
+    outline: none;
+    position:fixed;
+    border-radius: 100%;
+    cursor: pointer;
+    right:    0;
+    bottom:   0;
+    z-index: 100;
+}
 .logo_text{
     color: black;
     text-decoration: none;

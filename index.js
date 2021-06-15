@@ -59,7 +59,7 @@ function speak() {
             recognition.onresult = function(event) {
     
                 if (event.results[0][0].transcript.includes('home')){
-                    window.location.href = "{% url 'home' %}";
+                    window.location.href = "/";
                 }
                 else if (event.results[0][0].transcript.includes('projects')){
                     window.location.href = "{% url 'projects' %}";
