@@ -8,7 +8,7 @@ function mail(){
     if (grecaptcha.getResponse() == ""){
         alert("Please fill the captcha");
     } 
-    if (params['from_mail']=="" || params['from_name']=="" || params['message']==""){
+    if (parms['from_mail']=="" || parms['from_name']=="" || parms['message']==""){
         alert("All fields are required to be filled");
     }
     else {
