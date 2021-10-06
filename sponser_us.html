@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sponsor Us | Phoenix Robotics Club</title>
+    <link rel="stylesheet" href="sponser_us.css">
+    <link rel="icon" type='icon' href="images/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Russo+One&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="apple-touch-icon" href="images/logo.png"/>
+    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function() {
+      emailjs.init("user_GIRit0DIgFJ0kKIWiY8U6");
+      })();
+    </script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+    <div class="header" id='header' style="position: fixed;width:100%;z-index: 100;">
+        <div class="logo"style=' display: flex;justify-content: space-between;align-items:center;'>
+            <a href="index" class="logo_text"><img src="images/logo.png" alt="" style="width: 80px;height: 80px;"><div style="text-align: center;padding-right: 10px;"></div></a>
+            <a href="/" id='logo-text' class="logo_text">Phoenix Robotics Club<div style="text-align: center;">RVITM</div></a>
+        </div>
+        
+        <nav>
+
+            <ul class="nav-links">
+                <li><a class="nav_li" id='home' href="/">Home</a></li>
+                <li><a class="nav_li" id='events' href="events">Events</a></li>
+                <li><a class="nav_li" id='team' href="team">Team</a></li>
+                <li><a class="nav_li" id='aboutus' href="about_us">About Us</a></li>
+                
+            </ul>
+            
+        </nav>
+        <button id='menu' onclick='hamburger()'><img src="images/menu.png" alt=""></button>
+        
+
+    </div>
+    <ul class="hamburger_menu">
+      <li><a class="nav_li" id='hamburger_home' href="/">Home</a></li>
+      <li><a class="nav_li" id='hamburger_events' href="events">Events</a></li>
+      <li><a class="nav_li" id='hamburger_team' href="team">Team</a></li>
+      <li><a class="nav_li" id='hamburger_aboutus' href="about_us">About Us</a></li>
+    </ul>
+</body>
+</html>

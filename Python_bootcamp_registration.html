@@ -45,8 +45,37 @@
       <li><a class="nav_li" id='hamburger_team' href="team">Team</a></li>
       <li><a class="nav_li" id='hamburger_aboutus' href="about_us">About Us</a></li>
     </ul>
-    <div class="form">
-        <iframe width="100%" height= "480px" src= "https://forms.office.com/Pages/ResponsePage.aspx?id=cg5AtYOZnUywvi8X7hH-H6JxqrrCpItHhW5phCQWJcZUQk9DNFlZOU9CUDBLM0dTQUpPNzEwRk85Mi4u&embed=true" frameborder= "0" marginwidth= "0" marginheight= "0" style= "border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+    <div class="registration">
+      <div class="registration-form">
+        <h1>Register Now</h1>
+        <span><em>The details filled below will be reflected in the Certificate.</em></span>
+        <form class='register-form'>
+          <input type="text" required placeholder='First Name' name="entry.468752507">
+          <input type="text" required placeholder='Last Name' name="entry.2115696104">
+          <input type="email" required placeholder='Email Address' name="entry.1073341097" id='email'>
+          <select name="entry.1775519115" id="year">
+            <option value="Year of Study" disabled selected>Year of Study</option>
+            <option value="I">I</option>
+            <option value="II">II</option>
+            <option value="III">III</option>
+            <option value="IV">IV</option>
+          </select>
+          <select name="entry.292964540" id="branch">
+            <option value="Branch of Study" disabled selected>Department</option>
+            <option value="CSE">Computer Science and Engineering</option>
+            <option value="ECE">Electronics and Communication Engineering</option>
+            <option value="ISE">Information Science and Engineering</option>
+            <option value="ME">Mechanical Engineering</option>
+          </select>
+          <input type="text" required placeholder='College Name' name="entry.1600782312">
+          <div class="recaptcha">
+            <div class="g-recaptcha" data-sitekey="6LeHOBAaAAAAAKLQ9YdfvWDox8fYJQxxiU_9zcen"></div>
+          </div>
+          <div>
+            <input type="submit" value="Register" id="register-btn" disabled="disabled">
+          </div>
+        </form>
+      </div>
     </div>
 
 

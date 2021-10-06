@@ -12,13 +12,13 @@
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-  <link rel="apple-touch-icon" href="images/logo.png"/>
-  <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-    <script type="text/javascript">
-      (function() {
+  <link rel="apple-touch-icon" href="images/logo.png" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
       emailjs.init("user_GIRit0DIgFJ0kKIWiY8U6");
-      })();
-    </script>
+    })();
+  </script>
 </head>
 
 <body oncontextmenu="return false">
@@ -52,200 +52,90 @@
     <li><a class="nav_li" id='hamburger_aboutus' href="about_us">About Us</a></li>
   </ul>
   <div class="event">
-    <div class="description">
-      <div class="event-heading">
-        <h1>Python Bootcamp</h1>
-        <h4>Learn Python in a Practical Way</h4>
-        <h4>June 18 - June 20 2021</h4>
-      </div>
-      <div class="event-img">
-        <img src="images/code_3d.png" alt="">
-      </div>
+    <div class="text">
+      <p id="text_one">PHOENIX ROBOTICS CLUB'S</p>
+      <p id="text_two">ADVANCED <br> PYTHON</p>
+      <p id="text_three">BOOTCAMP</p>
     </div>
-    <div class="registration-form">
-      <h1>Register Now</h1>
-      <span><em>The details filled below will be reflected in the Certificate.</em></span>
-      <form class='register-form'>
-        <input type="text" required placeholder='First Name' name="entry.468752507" >
-        <input type="text" required placeholder='Last Name' name="entry.2115696104" >
-        <input type="email" required placeholder='Email Address' name="entry.1073341097" id='email'>
-        <select name="entry.1775519115" id="year">
-          <option value="Year of Study" disabled selected>Year of Study</option>
-          <option value="I">I</option>
-          <option value="II">II</option>
-          <option value="III">III</option>
-          <option value="IV">IV</option>
-        </select>
-        <select name="entry.292964540" id="branch">
-          <option value="Branch of Study" disabled selected>Department</option>
-          <option value="CSE">Computer Science and Engineering</option>
-          <option value="ECE">Electronics and Communication Engineering</option>
-          <option value="ISE">Information Science and Engineering</option>
-          <option value="ME">Mechanical Engineering</option>
-        </select>
-        <input type="text" required placeholder='College Name' name="entry.1600782312">
-        <div class="recaptcha">
-          <div class="g-recaptcha" data-sitekey="6LeHOBAaAAAAAKLQ9YdfvWDox8fYJQxxiU_9zcen"></div>
-        </div>
-        <div>
-          <input type="submit" value="Registrations Closed" id="register-btn" disabled="disabled">
-        </div>
-      </form>
+    
+    
+
     </div>
+    <div class="event_header">
+      <ul>
+        <li><a href="#event_description">Description</a></li>
+        <li><a href="#event_date">Date and Time</a></li>
+        <li><a href="#event_location">Location</a></li>
+        <li><a href="#event_host">About the host</a></li>
+        <li><a href="#event_topics">Topics</a></li>
+      </ul>
   </div>
-  <div class="details">
-    <h1><span id="details-heading">More Details</span></h1>
-    <div class="event-details-1 event-1-desktop">
-      <div class="event-details-11">
-        <h2>Why to Learn Python?</h2>
-        <p>We've all heard a lot about programming languages, Out of which the most popular one being Python!
-          So what really makes python so special?
-          Well, python is used for web development, AI, machine learning, operating systems, mobile application
-          development, video games and much more!!
-          It's Easy to read, write and learn with improved productivity over other languages. </p>
+  <div class="details_header">
+    <div class="all_details">
+      <div id="event_description">
+        <h2>Description</h2>
+        <p>
+          We've all heard a lot about programming languages, Out of which the most popular one being Python! So what really makes python so special? Well, python is used for web development, AI, machine learning, operating systems, mobile application development, video games and much more!! It's Easy to read, write and learn with improved productivity over other languages. 
+        </p>
+        <p>
+          Phoenix Robotics Club took an initiative to conduct the seven day bootcamp on Advanced Python covering the advanced topics like Object Oriented Programming, Data Visualization, GUI, etc.So, the Bootcamp “Python Bootcamp” focuses on laying the solid foundations in Python with practical projects. According to say “Nail the basics first, Detail the details later,” we feel learning from the basics will help us to solve the most complex problems.
+        </p>
       </div>
-      <div class="detail-img">
-        <img src="images/think.png" alt="">
-      </div>
-    </div>
-    <div class="event-details-1 mobile">
-      <div class="event-details-11">
-        <h2>Why to Learn Python?</h2>
-        <div class="detail-img">
-          <img src="images/think.png" alt="">
+      <hr>
+      <div id="event_date">
+        <h2>Date</h2>
+        <div id="e_date">
+          <i class="fas fa-calendar-week"></i>
+          <p>TBD</p>
         </div>
-        <p>We've all heard a lot about programming languages, Out of which the most popular one being Python!
-          So what really makes python so special?
-          Well, python is used for web development, AI, machine learning, operating systems, mobile application
-          development, video games and much more!!
-          It's Easy to read, write and learn with improved productivity over other languages. </p>
-      </div>
-      
-    </div>
-    <div class="event-details-2">
-      <img src="images/python.png" alt="">
-      <div class="event-details-2-text">
-        <h3>About Phoenix Robotics Club's <hr> <span>Programming in Python</span></h3>
-        <p>Phoenix Robotics Club took an initiative to
-          conduct the Bootcamp “Python Bootcamp” on Python Programming Language in
-          a practical-oriented way of learning. Regardless of
-          what we are learning, we must learn it from the
-          basics. So, the Bootcamp “Python Bootcamp” focuses on
-          laying the solid foundations in Python with practical projects.
-          According to say “Nail the basics first, Detail the
-          details later,” we feel learning from the basics will
-          help us to solve the most complex problems.</p>
-      </div>
-    </div>
-    <div class="event-details-2-mobile">
-      <div class="event-details-2-text">
-        <h3>About Phoenix Robotics Club's <span>Python Bootcamp</span></h3>
-        <img src="images/python.png" alt="">
-        <p>Phoenix Robotics Club took an initiative to
-          conduct the bootcamp “Python Bootcamp” on Python language in
-          a practical-oriented way of learning. Regardless of
-          what we are learning, we must learn it from the
-          basics. So, the “Python Bootcamp” focuses on
-          laying the solid foundations in Python Programming.
-          According to say “Nail the basics first, Detail the
-          details later,” we feel learning from the basics will
-          help us to solve the most complex problems.</p>
-      </div>
-    </div>
-    <div class="syllabus">
-      <i class="fab fa-leanpub fa-4x"></i>
-      <h2 id="table-of-contents-heading">What you will learn?</h2>
-      <div class="table_of_contents">
-        <ul>
-          <li>Introduction to Python Programming Language
-          </li>
-        </ul>
-        <ul>
-          <li>Data Types
-          </li>
-        </ul>
-        <ul>
-          <li>InBuilt Functions
-          </li>
-        </ul>
-        <ul>
-          <li>Operations in Lists, Tuples, strings, etc
-          </li>
-        </ul>
-        <ul>
-          <li> Operators
-          </li>
-        </ul>
-        <ul>
-          <li> Conditional Statements
-          </li>
-        </ul>
-        <ul>
-          <li> Loops
-          </li>
-        </ul>
-        <ul>
-          <li> List Comprehensions
-          </li>
-        </ul>
-        <ul>
-          <li>Mini Project
-          </li>
-        </ul>
-        <ul>
-          <li> User defined functions
-          </li>
-        </ul>
-        <ul>
-          <li> Map, Filter, Lamda Functions
-          </li>
-        </ul>
-        <ul>
-          <li>Error Handling
-          </li>
-        </ul>
-        <ul>
-          <li>File Handling
-          </li>
-        </ul>
-        <li>
-          Capstone Project
-        </li>
-      </div>
-    </div>
-
-    <div class="benefits">
-
-
-      <img src="images/benefits.svg" alt="">
-      <div class="event-details-3">
-        <h2 id="benefits-heading">Benefits</h2>
-        <ul>
-          <li>Explore and code in Python in both Theoritical and
-            hands on approach.</li>
-          <li>Certificates to eligible
-            members from Phoenix Robotics Club.</li>
-        </ul>
-        <h3>How to be elgible for Certificate?</h3>
-        <ol>
-          <li>Submit the mini assignments before the
-            deadline</li>
-          <li>Qualify the test</li>
-          <li>Receive the certificate.</li>
-        </ol>
-      </div>
-    </div>
-    <div class="mentor" id="mentor">
-      <h1>Know your Mentor</h1>
-      <div class="mentor-grid">
-        <div class="mentor-profile">
-          <img src="images/vishnu.JPG" alt="">
-          <p id="mentor-name">G VISHNU VARDHAN REDDY</p>
-          <p>Computer Science and Engineering</p>
-          <a href="https://www.linkedin.com/in/vishnu-vardhan-reddy-gadusunury-1916a61a8/"><i class="fab fa-linkedin fa-3x"></i></a>
+        <div id="e_time">
+          <i class="fas fa-clock"></i>
+          <p>TBD</p>
         </div>
-        
       </div>
+      <hr>
+      <div id="event_location">
+        <h2>Location</h2>
+        <div id="e_venue">
+          <i class="fas fa-map-marker-alt"></i>
+          <p>TBD</p>
+        </div>
+        <div id="e_address">
+          <i class="fas fa-map-marker-alt"></i>
+          <p>TBD</p>
+        </div>
+      </div>
+      <hr>
+      <div id="event_host">
+        <h2>About the mentor</h2>
+        <div id="e_host">
+            <div class="mentor-profile">
+              <img src="images/vishnu.JPG" alt="">
+              <div>
+                <p id="mentor-name">G VISHNU VARDHAN REDDY</p>
+              <p>Computer Science and Engineering</p>
+              <a href="https://www.linkedin.com/in/vishnu-vardhan-reddy-gadusunury-1916a61a8/"><i class="fab fa-linkedin fa-2x"></i></a>
+              </div>
+            </div>
+            
+        </div>
+      </div>
+      <hr>
+      <div id="event_topics">
+        <h2>Topics</h2>
+        <div id="e_topics">
+          <p>Object Oriented Programming</p>
+          <p>Data Visualization using Numpy, Pandas and Matplotlib</p>
+          <p>DBMS using python</p>
+          <p>Graphical User Interface</p>
+          <p>File Handling</p>
+          <p>One big project</p>
+        </div>
+      </div>
+    </div>
+    <div class="register_btn">
+      <p>Price:FREE</p>
+      <a href="/Python_bootcamp_registration.html"><button>Register</button></a>
     </div>
   </div>
   <div class="footer">
