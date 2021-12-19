@@ -217,7 +217,7 @@ body{
 }
 #workshop_img{
     width:100%;
-    margin:13px;
+    padding:13px;
     border-radius: 10px;
     height:80%;
 }
