@@ -164,6 +164,8 @@ body{
 .phoenix-text{
     display:flex;
     justify-content: center;
+    height:100vh;
+    align-items:center;
 }
 .team-header{
     display:flex;
@@ -190,7 +192,10 @@ body{
     width: 40vh;
     height: 40vh;
     border-radius: 50%;
-  
+    -ms-transform: scale(1); 
+    -webkit-transform: scale(1); 
+    transform: scale(1);
+    transition:500ms;
     
 }
 .mentor_profile-text:hover{
@@ -226,7 +231,10 @@ body{
     height: 40vh;
     border-radius: 200px;
     background:grey;
-    
+    -ms-transform: scale(1); 
+    -webkit-transform: scale(1); 
+    transform: scale(1);
+    transition:500ms;
 }
 .profile-text{
     color: white;
@@ -256,7 +264,8 @@ body{
     background:#27898c;
     -ms-transform: scale(1.1); 
     -webkit-transform: scale(1.1); 
-    transform: scale(1.1); 
+    transform: scale(1.1);
+    transition:500ms;
 }
 .profile-text:hover{
     color: aqua;
@@ -420,7 +429,6 @@ body{
         display:flex;
         justify-content:center;
         width:100%;
-
     }
     .phoenix-text img{
         width:100%;

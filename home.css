@@ -194,7 +194,7 @@ body{
 .team_info{
     display:flex;
     flex-direction:column;
-    justify-content: space-around;
+    justify-content: center;
     text-align: center;
 }
 .team-title{
@@ -211,14 +211,15 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin:20px 0px;
-    height:400px;
     background:black;
+    align-items: center;
     
 }
 #workshop_img{
     width:100%;
-    height:85%;
-    padding:50px;
+    margin:13px;
+    border-radius: 10px;
+    height:80%;
 }
 #robot_designing_image{
     height:100%;
@@ -233,6 +234,8 @@ body{
     display:flex;
     flex-direction: column;
     justify-content:center;
+    align-items:center;
+    text-align: center;
 }
 .carousel-inner{
     margin: auto;
