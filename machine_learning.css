@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nova+Flat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nova+Flat&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.registration_section{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    min-height:100vh;
+    align-items:center;
+}
+.registration_text{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+#title{
+    text-align:center;
+    font-family: 'Lato', sans-serif;
+}
+.registration-form{
+    margin-top:12px;
+}
+.entry_field{
+    display:flex;
+    align-items:center;
+    gap:5px;
+    border-bottom: 1px solid #000;
+    margin:20px 60px;
+}
+.input_field{
+    outline:0;
+    padding:5px 10px;
+    border:none;
+    font-size: 18px;
+    background: none;
+    width:100%;
+    font-family: 'Lato', sans-serif;
+}
+.entryfield{
+    display:flex;
+    justify-content:center;
+    margin:10px;
+}
+.submit_btn{
+    font-size:18px;
+    padding:6px 12px;
+    background:#08a88a;
+    border:none;
+    border-radius: 10px;
+    color:whitesmoke;
+    transition:1s;
+    cursor:pointer;
+}
+.submit_btn:hover{
+    background:#000;
+    color:whitesmoke;
+}
+
+.logo_text{
+    color: black;
+    text-decoration: none;
+    font-family: cursive;
+    font-family: 'Russo One', sans-serif;
+    font-size: 18px;
+}
+.logo_text:hover{
+    text-decoration:none;
+    color:black;
+}
+
+
+.nav-links li a{
+    color:black;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.3s ease 0s;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color:none;
+    height: 12vh;
+    width:100%;
+}
+#menu{
+    display: none;
+}
+.hamburger_menu{
+  display: none;
+}
+.contact_info{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.contact_info img{
+  width:100%;
+}
+.Contact_heading{
+  font-family: 'Nova Flat', cursive !important;
+  text-align: center;
+}
+.query_form button{
+    width:100%;
+}
+.nav-links{
+    list-style: none;
+    margin-top: 18px;
+    display: flex;
+    justify-content:space-between;
+}
+.nav-links li{
+    display: inline-block;
+    padding: 0 20px;
+}
+.nav-links a:hover{
+    color: #71e0eb;
+}
+.footer{
+    padding-top:30px;
+    margin: auto;
+    background:black;
+}
+.address{
+    color: white;
+    text-align: center;
+    padding:20px 2px;
+}
+.address li{
+    list-style: none;
+}
+.social-media i{
+    padding-top: 30px;
+    width:100px;
+    height: 100px;
+}
+.contact-form{
+    margin:30px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+#query{
+    margin:15px;
+    visibility: hidden;
+}
+.recaptcha{
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    gap:10px;
+}
+.recaptcha form{
+    display:flex;
+    justify-content:center;
+    margin-bottom:10px;
+}
+
+@media screen and (max-width:850px){
+    .registration_section{
+        grid-template-columns: 1fr;
+    }
+    .registration_text{
+        width:100%;
+    }
+    .registration-form{
+        margin-top:0px;
+    }
+    .entry_field{
+        margin:14px 10px;
+    }
+    .input_field{
+        width:100%;
+    }
+    .entryfield{
+        margin:0px;
+    }
+    .submit_btn{
+        width:100%;
+        border-radius: 0;
+        padding:15px 5px;
+    }
+    .nav-links,#logo-text{
+        display: none;
+    }
+    #menu{
+      display: initial;
+    }
+    .header{
+      display: flex;
+      justify-content: space-between;
+      background:transparent !important;
+      box-shadow: none !important;
+      padding:0;
+      width:100%;
+      position: fixed;
+    }
+    #menu{
+      width: 40px;
+      height: 40px;
+      align-items: center;
+      text-align: center;
+      padding: 0;
+      background:white;
+      border: none;
+      border-radius:6px;
+      z-index: 10;
+    }
+    #menu img{
+      width: 100%;
+      height: 100%;
+    }
+    .hamburger_menu{
+      display:none;
+      flex-direction: column;
+      text-decoration: none;
+      list-style:none;
+      justify-content: space-around;
+      align-items: center;
+      font-size:45px;
+      background:rgb(0,0,0,0.7);
+      height: 100%;
+      width:100%;
+      position: fixed;
+      z-index:10;
+    }
+    .hamburger_menu a{
+      color: white;
+      font-family: 'Nova Flat', cursive; 
+      text-decoration:none;
+
+    }
+    .hamburger_menu a:hover{
+        text-decoration:none;
+        color:#4479cf;
+    }
+    .hamburger_menu a:focus{
+      text-decoration:none;
+    }
+    button:focus {
+      outline: none !important;
+    }
+    #hamburger_aboutus{
+      border-bottom:4px solid grey;
+    }
+    
+    body{
+        width:100%;
+    }
+    
+    .contact_info{
+    display: flex;
+    flex-direction: column;
+    
+    }
+    .Contact_heading{
+        font-size:50px;
+        border-bottom: 4px solid white;
+    }
+        .form-row,.form_group{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+        gap: 15px;
+    }
+    .social-media{
+        display: flex;
+        justify-content:space-around;
+        padding:0;
+    }
+    .social-media i{
+        padding:0;
+        width:100%;
+    }
+    .query_form{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .logo_text{
+        display: none;
+    }
+}
