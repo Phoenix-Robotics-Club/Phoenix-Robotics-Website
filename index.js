@@ -48,7 +48,7 @@ function validate() {
   } 
   else 
   {
-    document.getElementsByClassName('join_now')[0].action="https://docs.google.com/forms/u/3/d/e/1FAIpQLSeIfaYN3o4_BaDmC6XQALxJkbZLBmoAZvNmTwU6p7DbCDALig/formResponse"
+    document.getElementsByClassName('join_now')[0].action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfltYsYAiSEXm2XffpXHCcBUvM-C9DtMygDgqqvjemzrQpzaw/formResponse"
   }
       }
 function speak() {
