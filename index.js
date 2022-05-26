@@ -42,14 +42,13 @@ var a = document.getElementsByClassName('hamburger_menu')[0];
     
         }
       }
-function validate(e) {
-  e.preventDefault();
+function validate() {
   if (grecaptcha.getResponse() == ""){
     alert("Please fill the captcha");
   } 
   else 
   {
-    document.getElementsByClassName('join_now')[0].action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfltYsYAiSEXm2XffpXHCcBUvM-C9DtMygDgqqvjemzrQpzaw/formResponse"
+    document.getElementsByClassName('join_now')[0].action="https://docs.google.com/forms/u/3/d/e/1FAIpQLSeIfaYN3o4_BaDmC6XQALxJkbZLBmoAZvNmTwU6p7DbCDALig/formResponse"
   }
       }
 function speak() {
