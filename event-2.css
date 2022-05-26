@@ -4,6 +4,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
 
 .logo_text{
     color: white;
@@ -235,14 +238,22 @@ body{
     font-family: 'Russo One', sans-serif;
 }
 #text_two{
-    font-size: 50px;
+    font-size: 70px;
     font-family: 'Russo One', sans-serif;
-    animation-name: neon;
+    color: #ffbd59;
+    /* font-family: 'Playfair Display', serif; */
+    /* font-family: "Legend"; */
+    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    /* text-transform: lowercase; */
+    /* letter-spacing:8px; */
+    /* font-weight: 800; */
+
+    /* animation-name: neon;
     animation-duration: 2s;
     animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    animation-timing-function: linear; */
 }
-@keyframes neon{
+/* @keyframes neon{
     0%{
         color: #ff0000;
     }
@@ -258,7 +269,7 @@ body{
     100%{
         color: #98f3fc;
     }
-}
+} */
 #text_three{
     font-size: 20px;
     font-family: 'Russo One', sans-serif;
