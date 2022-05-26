@@ -42,7 +42,8 @@ var a = document.getElementsByClassName('hamburger_menu')[0];
     
         }
       }
-function validate() {
+function validate(e) {
+  e.preventDefault();
   if (grecaptcha.getResponse() == ""){
     alert("Please fill the captcha");
   } 
