@@ -91,6 +91,13 @@
                     </select>
                 </div>
                 <div class="entryfield">
+                    <div class="qrcode">
+                        <p id="close"><span>X</span></p>
+                        <img src="images/qrcode.png" id="code" alt="">
+                    </div>
+                    <p id="click">Open QR Code</p>
+                </div>
+                <div class="entryfield">
                     <div class="recaptcha">
                         <div class="g-recaptcha" data-sitekey="6LeHOBAaAAAAAKLQ9YdfvWDox8fYJQxxiU_9zcen"></div>
                       </div>
@@ -103,6 +110,21 @@
     </div>
     <script src="index.js"></script>
     <script src="contact.js"></script>
+    <script>
+        var open_qr_btn=document.getElementById('click');
+        var close_qr_btn=document.getElementById('close');
+        var qr_code=document.getElementsByClassName('qrcode')[0];
+        function show_qr_code(){
+            qr_code.style.display="block";
+            document.body.style.overflow='hidden';
+        }
+        function close_qr_code(){
+            qr_code.style.display="none";
+            document.body.style.overflow='visible';
+        }
+        open_qr_btn.addEventListener('click',show_qr_code);
+        close_qr_btn.addEventListener('click',close_qr_code);
+    </script>
 </body>
 
 </html>

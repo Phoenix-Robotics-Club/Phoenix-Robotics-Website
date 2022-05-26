@@ -445,6 +445,29 @@ option:focus{
 .mobile{
     display:none;
 }
+
+#e_topics{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#e_topics p{
+    font-size:20px;
+    background-color:rgb(0, 0, 0);
+    border-radius: 10px;
+    padding:10px;
+    margin:10px;
+    text-align: center;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    color:white;
+    transition: all 0.3s ease 0s;
+}
+#e_topics p:hover{
+    
+    box-shadow: 2px 4px 4px 4px rgba(89, 68, 255, 0.4);
+    transform: scale(1.1);
+}
 @media screen and (max-width:900px){
     body{
         margin:0;
@@ -552,6 +575,10 @@ option:focus{
         flex-direction: column;
         padding-top:50px;
         gap: 40px;
+        background: url(/images/mobile_bg.jpg) no-repeat;
+        width: 100%;
+        background-size:100% 100%;
+
     }
     #details-heading{
         font-family: 'Roboto', sans-serif;
@@ -576,6 +603,9 @@ option:focus{
     .event-details-2{
         display: none;
     }
+    .event_header{
+        display:none;
+    }
     .event-details-2-mobile{
         display:initial;
         text-align: center;
@@ -583,6 +613,15 @@ option:focus{
     }
     .event-details-2-mobile img{
         width: 90%;
+    }
+    .details_header{
+        display: flex;
+        flex-direction: column;
+        padding:10px;
+        text-align: justify;
+    }
+    .details_header .all_details{
+        order:1;
     }
     .table_of_contents{
         display:grid;
@@ -603,6 +642,9 @@ option:focus{
         justify-content:space-between;
         gap: 24px;
     }
+    .register_btn{
+        position:initial;
+    }
     .mentor-grid{
         display: flex;
         justify-content:center;
@@ -620,5 +662,37 @@ option:focus{
     }
     .event-details-2-mobile h3{
         font-size:34px;
+    }
+    #e_date,#e_venue,#e_time{
+        display:flex;
+        gap: 10px;
+        align-items:center;
+        margin:15px 4px;
+    }
+    #e_venue p,#e_date p,#e_time p{
+        margin:0;
+    }
+    #e_host{
+        display:flex;
+        width:100%;
+        align-items: center;
+        justify-content:center;
+        margin:12px 4px;
+    }
+    .mentor-profile{
+        display:flex;
+        flex-direction:column;
+        border:2px solid grey;
+        padding:10px;
+        border-radius:10px;
+    }
+    #menu h2{
+        margin-bottom: 0;
+    }
+    #e_topics{
+        grid-template-columns: 1fr 1fr;
+    }
+    #e_topics p{
+        font-size:18px;
     }
 }
