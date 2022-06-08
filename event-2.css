@@ -248,12 +248,12 @@ body{
     /* letter-spacing:8px; */
     /* font-weight: 800; */
 
-    /* animation-name: neon;
+    animation-name: neon;
     animation-duration: 2s;
     animation-iteration-count: infinite;
-    animation-timing-function: linear; */
+    animation-timing-function: linear;
 }
-/* @keyframes neon{
+@keyframes neon{
     0%{
         color: #ff0000;
     }
@@ -269,7 +269,7 @@ body{
     100%{
         color: #98f3fc;
     }
-} */
+}
 #text_three{
     font-size: 20px;
     font-family: 'Russo One', sans-serif;
@@ -508,6 +508,9 @@ option:focus{
       border: none;
       border-radius:6px;
       z-index: 10;
+    }
+    #text_two{
+        font-size:60px;
     }
     #menu img{
       width: 100%;
