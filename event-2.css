@@ -439,6 +439,9 @@ option:focus{
 .mentor h1{
     margin:20px;
 }
+.event_hosts{
+    display: flex;
+}
 #e_host{
     display:flex;
     justify-content:flex-start;
@@ -478,6 +481,25 @@ option:focus{
     
     box-shadow: 2px 4px 4px 4px rgba(89, 68, 255, 0.4);
     transform: scale(1.1);
+}
+#e_host{
+    display:flex;
+    width:100%;
+    align-items: center;
+    justify-content:center;
+    margin:12px 4px;
+}
+#e_host img{
+    width:200px;
+    height:200px;
+    object-fit:cover;
+}
+.mentor-profile{
+    display:flex;
+    flex-direction:column;
+    border:2px solid grey;
+    padding:10px;
+    border-radius:10px;
 }
 @media screen and (max-width:900px){
     body{
@@ -688,7 +710,7 @@ option:focus{
     }
     #e_host{
         display:flex;
-        width:100%;
+        width:200px;
         align-items: center;
         justify-content:center;
         margin:12px 4px;
@@ -708,5 +730,12 @@ option:focus{
     }
     #e_topics p{
         font-size:18px;
+    }
+    .event_hosts{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+        margin:10px;
     }
 }
