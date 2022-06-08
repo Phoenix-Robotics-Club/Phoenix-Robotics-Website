@@ -713,7 +713,7 @@ option:focus{
         width:200px;
         align-items: center;
         justify-content:center;
-        margin:12px 4px;
+        margin:12px 4px; 
     }
     .mentor-profile{
         display:flex;
